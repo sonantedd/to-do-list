@@ -1,4 +1,4 @@
-// поле completed - задел на будущее, чтобы использовать jsonplaceholder и localStorage в итоговой домашке
+// поле completed - задел на будущее, чтобы использовать jsonplaceholder в итоговой домашке
 const todosData = [
     { title: "Купить продукты", completed: false },
     { title: "Вынести мусор", completed: false },
