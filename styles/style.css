@@ -1,0 +1,140 @@
+.main {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.todo__heading {
+    font-size: clamp(1.5rem, 6vw, 3rem);
+    margin-block-end: 2rem;
+    text-align: center;
+}
+
+.todo__form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo__input-field {
+    border: 1px solid var(--text);
+    background: transparent;
+    border-radius: 8px;
+    position: relative;
+}
+
+.todo__input-field::placeholder {
+    color: var(--subtext);
+}
+
+.todo__add-button {
+    border-radius: 8px;
+    border: none;
+    color: var(--base);
+    background-color: var(--maroon);
+    transition: background 0.2s ease;
+}
+
+.todo__add-button:hover {
+    background-color: var(--red);
+}
+
+.todo__add-button:active {
+    background-color: var(--mauve);
+}
+
+.todo__filters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo__filter-button {
+    background: transparent;
+    border: none;
+    border-block-end: 1px solid var(--text);
+    cursor: pointer;
+    transition: border 0.2s ease;
+}
+
+.todo__filter-button:hover {
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+.todo__filter-button:active {
+    border-color: var(--teal);
+    color: var(--teal);
+}
+
+.todo__filter-button.button-active {
+    border-color: var(--maroon);
+    color: var(--maroon);
+}
+
+.todo__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todo__item {
+    border: 1px solid var(--text);
+    border-radius: 8px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: border 0.2s ease;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.todo__item:hover {
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+.todo__item:active {
+    border-color: var(--teal);
+    color: var(--teal);
+}
+.todo__item-title {
+    font-weight: normal;
+    font-size: 1.25rem;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.todo__remove-button {
+    flex-shrink: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.todo__remove-icon {
+    width: 18px;
+    height: 18px;
+    color: var(--maroon);
+    transition: opacity 0.2s ease;
+}
+
+.todo__remove-icon:hover {
+    color: var(--red);
+}
+.todo__remove-icon:active {
+    color: var(--mauve);
+}
+
+.todo__item-completed {
+    opacity: 0.6;
+}
+
+.todo__item-completed .todo__item-title {
+    text-decoration: line-through;
+}

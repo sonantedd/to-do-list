@@ -1,0 +1,16 @@
+:root {
+    --font-size: 16px;
+    --blue: #8aadf4;
+    --teal: #8bd5ca;
+    --maroon: #ea999c;
+    --text: #cad3f5;
+    --subtext: #a5adce;
+    --base: #24273a;
+    --mantle: #1e2030;
+    --crust: #181926;
+    --crust50: #18192650;
+    --surface: #414559;
+    --red: #e78284;
+    --peach: #ef9f76;
+    --mauve: #ca9ee6;
+}

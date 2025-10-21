@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To-do list</title>
+        <link rel="stylesheet" href="./styles/main.css" />
+        <script src="./scripts/data.js" defer></script>
+        <script src="./scripts/constants.js" defer></script>
+        <script src="./scripts/index.js" defer></script>
+    </head>
+    <body>
+        <main class="main">
+            <h1 class="todo__heading">Список дел</h1>
+
+            <div class="todo__form">
+                <input class="todo__input-field" type="text" placeholder="Название дела" />
+                <button class="todo__add-button">Добавить</button>
+            </div>
+
+            <div class="todo__filters">
+                <button class="todo__filter-button button-all"></button>
+                <button class="todo__filter-button button-started"></button>
+                <button class="todo__filter-button button-completed"></button>
+            </div>
+
+            <ul class="todo__list"></ul>
+
+            <template class="todo__template">
+                <li class="todo__item">
+                    <h2 class="todo__item-title"></h2>
+                    <button class="todo__remove-button" type="button">
+                        <svg
+                            class="todo__remove-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                        >
+                            <line
+                                x1="4"
+                                y1="4"
+                                x2="16"
+                                y2="16"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                            />
+                            <line
+                                x1="16"
+                                y1="4"
+                                x2="4"
+                                y2="16"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                            />
+                        </svg>
+                    </button>
+                </li>
+            </template>
+        </main>
+    </body>
+</html>
